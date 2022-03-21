@@ -13,7 +13,7 @@ namespace Odev1._1AsalSayı
             int i = 2;
             BEGIN:
             Console.Write("Please Enter a Number:"); 
-            //To avoid from errors, we should check the user entered  a number or not.
+            //To avoid errors, we should check the user entered  a number or not.
             try
             {
                 num = Convert.ToInt32(Console.ReadLine()); 
