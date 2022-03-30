@@ -22,9 +22,9 @@ namespace _1.Odev
                 "Ankara"
             };
 
-            var citiesList = cities.Distinct();
+            var citiesList = cities.Distinct(); //Distinct. This removes all duplicate elements in a collection. It returns only distinct (or unique) elements.
 
-            foreach(var city in citiesList)
+            foreach (var city in citiesList)
             {
                 Console.WriteLine(city);
             }
