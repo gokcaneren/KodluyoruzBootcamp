@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MethodPratikleri
 {
@@ -11,9 +12,14 @@ namespace MethodPratikleri
 
             int num1 = 10;
             int num2 = 20;
+            int num3 = 30;
 
             int resultAA = sum(num1, num2);
             Console.WriteLine(resultAA);
+
+            int resultBB = sum(num1, num2, num3);
+            Console.WriteLine(resultBB);
+
 
             Console.Write("Enter a number:");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -29,9 +35,22 @@ namespace MethodPratikleri
                 Console.WriteLine("Prime");
             }
 
+            List<int> numbers = new List<int>() { 5, 10, 15, 5, 3, 20, 30, 8, 6 };
+
+            int resultCC = getAverageOfList(numbers);
+            Console.WriteLine(resultCC);
 
         }
 
+        static int getAverageOfList(List<int> numbers)
+        {
+            int total = 0;
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                total = total + numbers[i];
+            }
+            return total / numbers.Count;
+        }
 
         static void helloWorld()
         {
@@ -48,6 +67,12 @@ namespace MethodPratikleri
         static int sum(int a, int b)
         {
             return a + b;
+        }
+
+
+        static int sum(int a, int b, int c)
+        {
+            return a + b + c;
         }
 
         /// <summary>
