@@ -15,6 +15,11 @@ namespace Class
 
             person.welcome(person.name, person.lastName);
 
+
+            Workers worker = new Workers(27, "Eren", "Tailor");
+
+            worker.info(worker.id, worker.name, worker.job);
+
         }
     }
 }
