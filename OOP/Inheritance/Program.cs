@@ -17,6 +17,7 @@ namespace Inheritance
             worker1.age = 43;
             worker1.job = "Teacher";
 
+            
             List<Person> personList = new List<Person>();
 
             personList.Add(student1);
