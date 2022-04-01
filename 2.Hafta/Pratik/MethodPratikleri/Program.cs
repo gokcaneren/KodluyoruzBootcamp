@@ -14,8 +14,12 @@ namespace MethodPratikleri
             int num2 = 20;
             int num3 = 30;
 
+            int resultDD = divide(num1, num2);
+            Console.WriteLine(resultDD);
+
             int resultAA = sum(num1, num2);
             Console.WriteLine(resultAA);
+
 
             int resultBB = sum(num1, num2, num3);
             Console.WriteLine(resultBB);
@@ -34,6 +38,9 @@ namespace MethodPratikleri
             {
                 Console.WriteLine("Prime");
             }
+
+
+
 
             List<int> numbers = new List<int>() { 5, 10, 15, 5, 3, 20, 30, 8, 6 };
 
@@ -93,6 +100,13 @@ namespace MethodPratikleri
             }
 
             return isPrime;
+        }
+
+
+        static int divide(int num1, int num2)
+        {
+            int result = num1 + num2;
+            return result / 2;
         }
     }
 }
