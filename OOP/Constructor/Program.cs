@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Constructor
 {
@@ -17,6 +18,7 @@ namespace Constructor
             Console.WriteLine($"Movie:{movie1.name} Year:{movie1.year} Genre:{movie1.genres}");
             Console.WriteLine($"Movie:{movie2.name} Year:{movie2.year} Genre:{movie2.genres}");
 
+            Characters characters = new Characters("Gandalf", 24000);
 
 
         }
@@ -39,6 +41,19 @@ namespace Constructor
             this.name = name;
             this.year = year;
             this.genres = genres;
+        }
+    }
+
+
+    class Characters
+    {
+        private string _name;
+        private int _age;
+
+        public Characters(string name, int age)
+        {
+            _name = name;
+            _age = age;
         }
     }
 
