@@ -19,6 +19,7 @@ namespace Constructor
             Console.WriteLine($"Movie:{movie2.name} Year:{movie2.year} Genre:{movie2.genres}");
 
             Characters characters = new Characters("Gandalf", 24000);
+            characters.getCharacter();
 
 
         }
@@ -54,6 +55,11 @@ namespace Constructor
         {
             _name = name;
             _age = age;
+        }
+
+        public void getCharacter()
+        {
+            Console.WriteLine($"Character:{_name} Age:{_age}");
         }
     }
 
