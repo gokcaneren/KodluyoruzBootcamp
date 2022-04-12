@@ -7,6 +7,7 @@ namespace Delegates
         public delegate void FirstDelegate();
         public delegate void MessageCarrier(string name);
         public delegate void NumCarrier(int num);
+        public delegate int Operator(int num1, int num2);
 
         static void Main(string[] args)
         {
@@ -24,12 +25,13 @@ namespace Delegates
             carrier("Gokcan");
 
             NumCarrier numCarrier = toPerson.TradePackage;
-
             numCarrier(1000);
-          
 
+            Operations operations = new Operations();
+            Operator operator1 = operations.SumOperations;
 
-
+            var result=operator1(3, 5);
+            Console.WriteLine(result);
         }
     }
 }

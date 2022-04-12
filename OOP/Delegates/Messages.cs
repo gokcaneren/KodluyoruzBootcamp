@@ -34,9 +34,17 @@ namespace Delegates
             Console.WriteLine($"{numOfPackage} will arrive today!");
         }
 
-
     }
 
 
+    public class Operations
+    {
+        public int SumOperations(int num1,int num2)
+        {
+            return num1 + num2;
+        }
+
+
+    }
 
 }
