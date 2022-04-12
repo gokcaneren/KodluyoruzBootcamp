@@ -18,4 +18,25 @@ namespace Delegates
             Console.WriteLine("GoodBye!");
         }
     }
+
+
+
+    public class MessagesToPerson
+    {
+
+        public void MessageToWorker(string name)
+        {
+            Console.WriteLine($"{name} lead to all operations!");
+        }
+
+        public void TradePackage(int numOfPackage)
+        {
+            Console.WriteLine($"{numOfPackage} will arrive today!");
+        }
+
+
+    }
+
+
+
 }
