@@ -17,7 +17,7 @@ namespace Delegates
 
         static void Main(string[] args)
         {
-            ////Main way of using Delegates
+            ////Main way of using Delegates-----------
             //Messages message = new Messages();
             //FirstDelegate firstDelegate = message.HelloMessage;
             //firstDelegate();
@@ -39,6 +39,7 @@ namespace Delegates
             //var result = operator1(3, 5);
             //Console.WriteLine(result);
 
+            //Good way of using Delegates-----------
 
             //var filtered = Filters.Filter(numbers, isEven);
 
@@ -53,6 +54,18 @@ namespace Delegates
 
             filtered.ForEach(p => Console.WriteLine(p));
             filtered.Where(x => x % 5 == 0);
+
+
+            //Func<int> getRandomNumber = delegate ()
+            //{
+            //    Random rnd = new Random();
+            //    return rnd.Next(1, 100);
+            //};
+
+            //Console.WriteLine(getRandomNumber());
+
+            Func<int> getRandomNumber2 = () => new Random().Next(1, 100);
+            Console.WriteLine(getRandomNumber2());
         }
 
         
